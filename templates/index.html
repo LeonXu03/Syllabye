@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+  <meta charset="utf-8">
+  <title>
+
+    SYLLABYE
+
+  </title>
+</head>
+
+
+
+
+
+<body style="margin:0px;">
+
+    <div class="background">
+        <div class="background-container">
+            <p class="header-text">
+              Welcome to Syllabye!
+            </p>
+
+
+            <form action="/" method="POST" enctype="multipart/form-data">
+
+              <input type="file" name="myFile"id="myFile" onchange="submit()"style="display:none">
+              <label type = "submit" for="myFile">Upload File</label>
+            </form>
+
+           
+            
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+
+
+
+
+</html>
