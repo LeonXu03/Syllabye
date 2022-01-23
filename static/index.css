@@ -8,7 +8,7 @@ html{
     display: flex;
     justify-content: center;
     align-items:center;
-    animation: bgcolor 10s infinite alternate;
+    animation: bgcolor 7s infinite alternate;
     background: linear-gradient(45deg,#e664ac, #e66465, 
     #ffaf6d, #ffdd6d);
     background-size: 400%;
