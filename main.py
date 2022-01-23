@@ -11,7 +11,7 @@ def main():
     current_month = date.month
     current_year = date.year
             
-    raw = parser.from_file('GENE_2.pdf')
+    raw = parser.from_file('SAMPLE-Course-Syllabus.pdf')
     file = raw['content']
     #print(file)
 
