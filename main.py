@@ -3,8 +3,8 @@ import PyPDF2
 import re
 from tika import parser 
 import datetime
+import csv
 
-    
 def main():
     today = datetime.datetime.now()
     date = today.date()
@@ -45,6 +45,16 @@ def main():
         
     for x in range (0, len(main_list)):
          print(main_list[x])
+         
+    content = main_list
+    header = ['Subject', "Start Date"]
+    
+    with open('calendar.csv', 'w', encoding = 'UTF8', newline = '') as f:
+        writer = csv.writer(f)
+        writer.writerow(header)
+        writer.writerows(content)
+            
+        
             
 def date_to_num(date, current_month, current_year):
     month = month_to_number(date[0])
