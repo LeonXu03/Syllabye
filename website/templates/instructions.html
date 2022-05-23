@@ -1,0 +1,20 @@
+<div style = "padding: 15px;">
+    <a href="/" style = "color: white; padding-left: 5px;">Home</a>
+</div>
+
+{% extends "base.html" %} {% block title %}Instructions{% endblock %} 
+
+{% block content %} 
+<h3 class = "description">How does Syllabye work?</h3>
+<br>
+<br>
+
+<div>
+    <ol style = "display: table; margin: 0 auto; color:white; font-size: 15px;">
+        <h3 style= "color:White; text-decoration: underline;">Instructions</h3>
+        <li class="list-item one">Upload a course syllabus PDF file</li>
+        <li class="list-item two">Import the downloaded "calendar.csv" file into Google Calendar</li>
+        <li class="list-item three">Voilà! All assignment, midterm, and final dates have been added!</li>
+    </ol>
+</div>
+{% endblock %}

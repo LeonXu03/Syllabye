@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}Syllabye - Home{% endblock %} 
+
+{% block content %}
+<h2 class = "description">The easiest way to extract assignment dates from syllabi</h2>
+<br>
+<form class = "form" action = "http://localhost:5000" method = "POST" enctype = "multipart/form-data">
+    <input class = "form" type = "file" name = "file"/>
+    <input type = "submit"/> 
+</form>
+
+<br>
+<br>
+<br>
+<a href="/instructions" class="center" style = "color:white;">How do I use Syllabye?</a>
+
+
+{% endblock %}

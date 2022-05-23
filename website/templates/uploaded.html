@@ -1,0 +1,23 @@
+<div style = "padding: 15px;">
+    <a href="/" style = "color: white; padding-left: 5px;">Home</a>
+</div>
+{% extends "base.html" %} {% block title %}Syllabye - Thank You!{% endblock %} 
+{%block header %}Thank You! {% endblock %}
+{% block content %} 
+<h3 class = "description" style="font-size: 20px">Your calendar.csv file has been automatically downloaded</h3>
+<br>
+
+<div style = "text-align: center">
+    <a href="/uploaded/download" title="calendar.csv" class="center">
+        <img src="../static/csv-file.png" alt="CSV_icon" width = "75" height = "75">
+    </a>
+</div>
+
+<a href="/uploaded/download" class="center">calendar.csv</a>
+
+<br>
+<div>
+    <h3 class = "description" style="font-size: 15px">File didn't automatically download? Click the file above.</h3>
+</div>
+
+{% endblock %} 
